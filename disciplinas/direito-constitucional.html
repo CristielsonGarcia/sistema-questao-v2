@@ -12,7 +12,7 @@
         <section class="voltar">
             <a href="../index.html"><span class="material-symbols-outlined">arrow_back</span></a>
         </section>
-        <section class="questao">
+        <section class="questao" data-questao = "1" data-correct = "Certo">
             <div class="numeracao-questao">
                 <p>Questao 01</p>
             </div>
@@ -20,13 +20,34 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ab impedit praesentium eveniet magnam inventore, tenetur omnis quidem vel architecto quisquam! Eius reprehenderit suscipit aliquid, quia possimus sit incidunt fugiat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis ea ab, dolorem soluta voluptatibus itaque, ipsam mollitia deleniti earum rem? Rem atque voluptas placeat laboriosam fugit labore laborum. Nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis, iste inventore rerum rem facere qui cupiditate in saepe autem quae minima commodi? Aperiam suscipit doloremque voluptatum numquam unde distinctio?</p>
             </div>
             <div class="alternativas-questao">
+                <div class="opcao" data-value = "Certo">
+                    <button>C</button> <span>Certo</span>
+                </div>
+                <div class="opcao" data-value = "Errado">
+                    <button>E</button> <span>Errado</span>
+                </div>
 
             </div>
             <div class="btn-responder">
-
+                <button>Responder</button>
             </div>
-
         </section>
     </main>
+    <div class="gabarito" id="final-section">
+            <button id="revelar-tabela" style="display: block; margin-top: 20px;">Revelar</button>
+            <table id="resumo-respostas" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Questão</th>
+                        <th>Resposta Correta</th>
+                        <th>Resposta Escolhida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As respostas serão inseridas dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+        <script src="javascript/script.js"></script>
 </body>
 </html>
